@@ -2,10 +2,10 @@
   "name": "version2",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/app",
+  "main": "backend/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/app",
+    "start": "node backend/app.js",
     "frontend": "cd frontend && npm start"
   },
   "keywords": [],
