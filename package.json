@@ -20,9 +20,7 @@
     "fuse.js": "^6.6.2",
     "leaflet": "^1.7.1",
     "mongoose": "^7.3.1",
-    "react-leaflet": "^3.2.0"
-  },
-  "devDependencies": {
+    "react-leaflet": "^3.2.0",
     "socket.io": "^4.7.2"
   }
 }
