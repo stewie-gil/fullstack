@@ -4,6 +4,7 @@ const socketIO = require('socket.io');
 const bodyParser = require('body-parser');
 const authRoutes = require('./routes/authRoutes');
 const mongoose = require('mongoose');
+const path = require('path');
  
 const app = express();
 const server = http.createServer(app);
@@ -13,6 +14,7 @@ const io = socketIO(server, {
     methods: ['GET', 'POST'],
   },
 }); 
+
 
 const port = 3002;
 
@@ -100,10 +102,10 @@ const connectDB = async () => {
 };
 
 
-app.use(express.static(path.join(__dirname, './frontend/build')));
+app.use(express.static(path.join(__dirname, './../frontend/build')));
 app.get("*", (req, res)=>{
 
-  res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
+  res.sendFile(path.join(__dirname, "./../frontend/build/index.html"));
 })
 
 
